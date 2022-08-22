@@ -6,7 +6,7 @@ To download the related node modules before running
 
 ```bash
 npm install
-# or
 ```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+If you are currently using Mac OS,
+open your terminal, and enter `npm install`.
