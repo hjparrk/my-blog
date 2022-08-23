@@ -1,11 +1,11 @@
 import Link from "next/link";
 import { HomeIcon } from "@heroicons/react/solid";
 
-function HomeLink() {
+function HomeLogo() {
   return (
     <div className={styles.logo}>
       <Link href="/">
-        <HomeIcon className="w-10 h-10" />
+        <HomeIcon className="w-6 h-6" />
       </Link>
       <Link href="/">
         <h2 className="pl-3">Hyojoon Park</h2>
@@ -18,4 +18,4 @@ const styles = {
   logo: "text-2xl flex items-center justify-start",
 };
 
-export default HomeLink;
+export default HomeLogo;

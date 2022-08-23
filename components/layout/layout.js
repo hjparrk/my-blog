@@ -1,9 +1,10 @@
-import Router, { useRouter } from "next/router";
+import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 import NavigationBar from "./navigation-bar/navigation-bar";
 
 function Layout(props) {
   const router = useRouter();
+  const path = router.asPath;
 
   return (
     <>
@@ -13,7 +14,7 @@ function Layout(props) {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
       >
-        <NavigationBar />
+        <NavigationBar path={path} />
         <main>{props.children}</main>
       </motion.div>
     </>
