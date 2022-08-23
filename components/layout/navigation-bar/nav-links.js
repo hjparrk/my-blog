@@ -12,7 +12,7 @@ function NavLinks(props) {
               <a
                 className={`${
                   activePathTitle === link.title
-                    ? " underline underline-offset-8 decoration-black decoration-2"
+                    ? " underline underline-offset-8 decoration-2"
                     : ""
                 }`}
               >
