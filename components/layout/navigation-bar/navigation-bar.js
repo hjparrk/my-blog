@@ -40,9 +40,9 @@ function NavigationBar(props) {
 
 const styles = {
   navbar_light:
-    "bg-white flex flex-row pl-40 pr-24 h-24 items-center justify-between border-b-2 border-gray-300 mb-10",
+    "bg-white flex flex-row pl-40 pr-24 h-24 items-center justify-between border-b-2 border-gray mb-10",
   navbar_dark:
-    "bg-black flex flex-row pl-40 pr-24 h-24 items-center justify-between border-b-2 border-gray-300 mb-10",
+    "bg-black flex flex-row pl-40 pr-24 h-24 items-center justify-between border-b-2 border-gray mb-10",
 };
 
 export default NavigationBar;

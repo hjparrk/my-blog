@@ -1,11 +1,7 @@
-import { motion, useInView } from "framer-motion";
-import { useRef, useEffect } from "react";
+import { motion } from "framer-motion";
 import CustomCard from "../ui/card";
 
 function Main() {
-  const ref = useRef();
-  const isInView = useInView(ref, { once: false });
-
   const aboutText = (
     <span>
       I'm a student developer at the University of Sydney.
@@ -15,9 +11,19 @@ function Main() {
     </span>
   );
 
-  useEffect(() => {
-    console.log("Element is in view: ", isInView);
-  }, [isInView]);
+  const dummyTitle = ["Blog", "Contact", "Github", "LinkedIn", "Instagram"];
+
+  const dummyText = (
+    <span>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum.
+    </span>
+  );
 
   return (
     <div className="flex-col items-start">
@@ -26,21 +32,11 @@ function Main() {
           {aboutText}
         </CustomCard>
       </motion.div>
-      <motion.div whileHover={{ scale: 1.1 }}>
-        <CustomCard title={"Blog"}>Blog ...</CustomCard>
-      </motion.div>
-      <motion.div whileHover={{ scale: 1.1 }}>
-        <CustomCard title={"Contact"}>Contact Me ...</CustomCard>
-      </motion.div>
-      <motion.div whileHover={{ scale: 1.1 }}>
-        <CustomCard title={"Dummy Card"}>Dummy Text Here ...</CustomCard>
-      </motion.div>
-      <motion.div whileHover={{ scale: 1.1 }}>
-        <CustomCard title={"Dummy Card"}>Dummy Text Here ...</CustomCard>
-      </motion.div>
-      <motion.div whileHover={{ scale: 1.1 }}>
-        <CustomCard title={"Dummy Card"}>Dummy Text Here ...</CustomCard>
-      </motion.div>
+      {dummyTitle.map((item) => (
+        <motion.div whileHover={{ scale: 1.1 }}>
+          <CustomCard title={item}>{dummyText}</CustomCard>
+        </motion.div>
+      ))}
     </div>
   );
 }
