@@ -1,11 +1,13 @@
-import NextUIGrid from "../ui/grid";
-import NextUICard from "../ui/card";
+import { Grid } from "@nextui-org/react";
+import NextCard from "../ui/card";
 
 function Main() {
   return (
-    <NextUIGrid>
-      <NextUICard>Hello World!</NextUICard>
-    </NextUIGrid>
+    <Grid.Container gap={2} justify="center" alignItems="center">
+      <Grid xs={6}>
+        <NextCard title={"About"}>Card 1</NextCard>
+      </Grid>
+    </Grid.Container>
   );
 }
 

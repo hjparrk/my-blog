@@ -16,7 +16,7 @@ function Home() {
   );
 
   return (
-    <div className="flex h-full flex-col justify-center items-center text-4xl">
+    <div className="flex h-full flex-col justify-center items-center text-4xl ml-24">
       {content}
     </div>
   );
