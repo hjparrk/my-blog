@@ -3,9 +3,11 @@ import { motion } from "framer-motion";
 function Welcoming(props) {
   return (
     <>
-      <h1 className="mb-12  font-bold">Wanna &nbsp;explore &nbsp;more?</h1>
-      <div className="flex flex-row ">
-        <h2 className="font-light">Then,&nbsp; highfive&nbsp; me&emsp;</h2>
+      <h1 className="mt-40 mb-12 font-bold">
+        Wanna &nbsp;explore &nbsp;my &nbsp;blog?
+      </h1>
+      <div className="flex flex-row">
+        <h2 className="font-light">highfive&nbsp; me&emsp;</h2>
         <motion.h2
           className="font-light"
           onClick={props.onShowWelcoming}

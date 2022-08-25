@@ -26,8 +26,8 @@ function CustomCard({ title, subtitle, children }) {
     );
   } else {
     content = (
-      <div className={styles.container}>
-        <p className={styles.text}>{children}</p>
+      <div className={styles.conatiner_style}>
+        <p className={styles.title}>{children}</p>
       </div>
     );
   }
@@ -40,8 +40,8 @@ const styles = {
   container_dark:
     "flex flex-col p-8 rounded-3xl bg-black-900 my-16 max-w-screen-md text-white hover:bg-lightgray hover:text-black",
   subsection: "m-3",
-  title: "text-5xlfont-extrabold",
-  subtitle: "text-3xlfont-semibold",
+  title: "text-5xl font-extrabold",
+  subtitle: "text-3xl font-semibold",
   text: "text-2xl font-light",
 };
 

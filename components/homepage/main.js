@@ -11,17 +11,27 @@ function Main() {
     </span>
   );
 
-  const dummyTitle = ["Blog", "Contact", "Github", "LinkedIn", "Instagram"];
-
-  const dummyText = (
+  const skillText = (
     <span>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.
+      Have learnt and written programs and/or algorithms using C and 2
+      Object-Oriented Languages(OOP): Java and Python throughout course at the
+      university.
+    </span>
+  );
+
+  const webDevText = (
+    <span>
+      Have learnt and written programs and/or algorithms using C and 2
+      Object-Oriented Languages(OOP): Java and Python throughout course at the
+      university.
+    </span>
+  );
+
+  const myInterestText = (
+    <span>
+      Have learnt and written programs and/or algorithms using C and 2
+      Object-Oriented Languages(OOP): Java and Python throughout course at the
+      university.
     </span>
   );
 
@@ -32,11 +42,21 @@ function Main() {
           {aboutText}
         </CustomCard>
       </motion.div>
-      {dummyTitle.map((item) => (
-        <motion.div key={item} whileHover={{ scale: 1.1 }}>
-          <CustomCard title={item}>{dummyText}</CustomCard>
-        </motion.div>
-      ))}
+      <motion.div whileHover={{ scale: 1.1 }}>
+        <CustomCard title={"Programming Skills"} subtitle={"Python, Java & C"}>
+          {skillText}
+        </CustomCard>
+      </motion.div>
+      <motion.div whileHover={{ scale: 1.1 }}>
+        <CustomCard title={"Web Dev"} subtitle={"React & Next JS"}>
+          {webDevText}
+        </CustomCard>
+      </motion.div>
+      <motion.div whileHover={{ scale: 1.1 }}>
+        <CustomCard title={"Interests"} subtitle={"Framer Motion !"}>
+          {myInterestText}
+        </CustomCard>
+      </motion.div>
     </div>
   );
 }
