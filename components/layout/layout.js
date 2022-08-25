@@ -8,8 +8,11 @@ function Layout(props) {
 
   return (
     <>
-      <NavigationBar path={path} />
+      <div className="sticky top-0 z-50">
+        <NavigationBar path={path} />
+      </div>
       <motion.div
+        className=" relative"
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{

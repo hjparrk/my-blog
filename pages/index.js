@@ -15,11 +15,14 @@ function Home() {
     <Welcoming onShowWelcoming={showWelcomingHandler} />
   );
 
-  return (
-    <div className="flex h-full flex-col justify-center items-center text-4xl ml-24">
-      {content}
-    </div>
-  );
+  const style = showWelcoming ? styles.main : styles.welcome;
+
+  return <div className={style}>{content}</div>;
 }
+
+const styles = {
+  welcome: "flex h-full flex-col justify-center items-center text-4xl",
+  main: "flex h-full flex-col justify-center items-start text-4xl ml-80",
+};
 
 export default Home;
