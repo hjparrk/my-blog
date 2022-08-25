@@ -1,5 +1,5 @@
 import HomeLogo from "./home-logo";
-import NavLinks from "./nav-links";
+import NavContent from "./nav-contents/nav-content";
 
 const routes = [
   {
@@ -29,10 +29,11 @@ function NavigationBar(props) {
     activePathTitle = activePath.title;
   }
 
+  const data = { routes, activePathTitle };
   return (
     <div className={styles.navbar}>
       <HomeLogo />
-      <NavLinks links={routes} activePathTitle={activePathTitle} />
+      <NavContent data={data} />
     </div>
   );
 }
