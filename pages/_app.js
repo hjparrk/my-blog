@@ -1,13 +1,14 @@
 import Head from "next/head";
 import Layout from "../components/layout/layout";
-import { AnimatePresence } from "framer-motion";
 import { ThemeProvider } from "next-themes";
+import { AnimatePresence } from "framer-motion";
+
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <AnimatePresence mode="wait">
-      <ThemeProvider>
+    <ThemeProvider>
+      <AnimatePresence mode="wait">
         <Layout>
           <Head>
             <title>Home - HJPark</title>
@@ -18,8 +19,8 @@ function MyApp({ Component, pageProps }) {
           </Head>
           <Component {...pageProps} />
         </Layout>
-      </ThemeProvider>
-    </AnimatePresence>
+      </AnimatePresence>
+    </ThemeProvider>
   );
 }
 

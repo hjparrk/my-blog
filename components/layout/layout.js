@@ -8,13 +8,22 @@ function Layout(props) {
 
   return (
     <>
+      <NavigationBar path={path} />
       <motion.div
         key={router.route}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          type: "spring",
+          stiffness: 30,
+          damping: 10,
+          staggerChildren: "true",
+          // repeat : true or false
+          // bounce
+          // mass
+        }}
         exit={{ opacity: 0 }}
       >
-        <NavigationBar path={path} />
         <main>{props.children}</main>
       </motion.div>
     </>
