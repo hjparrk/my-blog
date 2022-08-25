@@ -8,7 +8,7 @@ function Welcoming(props) {
         <h2 className="font-light">Then, highfive me&emsp;</h2>
         <motion.h2
           className="font-light"
-          onClick={props.onShowContent}
+          onClick={props.onShowWelcoming}
           initial={{ rotate: 30 }}
           animate={{
             rotate: [30, -10, 0, 70, 30],

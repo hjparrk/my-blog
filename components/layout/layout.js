@@ -10,7 +10,6 @@ function Layout(props) {
     <>
       <NavigationBar path={path} />
       <motion.div
-        key={router.route}
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{
