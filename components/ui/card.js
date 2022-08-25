@@ -36,9 +36,9 @@ function CustomCard({ title, subtitle, children }) {
 
 const styles = {
   container_light:
-    "flex flex-col p-8 rounded-3xl bg-white my-16 max-w-screen-md text-black",
+    "flex flex-col p-8 rounded-3xl bg-white my-16 max-w-screen-md text-black hover:bg-lightgray hover:text-black",
   container_dark:
-    "flex flex-col p-8 rounded-3xl bg-black-900 my-16 max-w-screen-md text-white",
+    "flex flex-col p-8 rounded-3xl bg-black-900 my-16 max-w-screen-md text-white hover:bg-lightgray hover:text-black",
   subsection: "m-3",
   title: "text-5xlfont-extrabold",
   subtitle: "text-3xlfont-semibold",

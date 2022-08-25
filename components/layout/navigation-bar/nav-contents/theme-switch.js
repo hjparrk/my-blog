@@ -9,6 +9,7 @@ function ThemeSwitch() {
     <Switch
       className={styles.switch}
       checked={theme === "dark" ? true : false}
+      defaultValue="light"
       onChange={(e) =>
         e.target.checked ? setTheme("dark") : setTheme("light")
       }

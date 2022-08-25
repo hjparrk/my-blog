@@ -4,9 +4,9 @@ import CustomCard from "../ui/card";
 function Main() {
   const aboutText = (
     <span>
-      I'm a student developer at the University of Sydney.
+      I&apos;m a student developer at the University of Sydney.
       <br />
-      However, I'm now living in Seoul, South Korea due to the mandatory
+      However, I&apos;m now living in Seoul, South Korea due to the mandatory
       military service.
     </span>
   );
@@ -28,12 +28,12 @@ function Main() {
   return (
     <div className="flex-col items-start">
       <motion.div whileHover={{ scale: 1.1 }}>
-        <CustomCard title={"About"} subtitle={"Hello I'm Hyojoon Park."}>
+        <CustomCard title={"About"} subtitle={"Hello I'm Hyojoon Park"}>
           {aboutText}
         </CustomCard>
       </motion.div>
       {dummyTitle.map((item) => (
-        <motion.div whileHover={{ scale: 1.1 }}>
+        <motion.div key={item} whileHover={{ scale: 1.1 }}>
           <CustomCard title={item}>{dummyText}</CustomCard>
         </motion.div>
       ))}

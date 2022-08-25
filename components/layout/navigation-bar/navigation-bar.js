@@ -28,6 +28,7 @@ function NavigationBar(props) {
   }
 
   const data = { routes, activePathTitle };
+
   return (
     <div
       className={theme === "dark" ? styles.navbar_dark : styles.navbar_light}

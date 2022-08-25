@@ -1,11 +1,25 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { DiReact } from "react-icons/di";
+import { SiNextdotjs } from "react-icons/si";
 
 function NavLinks(props) {
   const { links, activePathTitle } = props;
 
   return (
     <>
+      <div className="flex flex-row">
+        <div className="mx-1">
+          <a href="https://reactjs.org/">
+            <DiReact size={30} />
+          </a>
+        </div>
+        <div className="mx-1">
+          <a href="https://nextjs.org/">
+            <SiNextdotjs size={26} />
+          </a>
+        </div>
+      </div>
       {links.map((link) => (
         <motion.li
           initial={{ scale: 1 }}

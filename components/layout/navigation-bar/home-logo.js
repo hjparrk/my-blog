@@ -1,17 +1,17 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { HomeIcon } from "@heroicons/react/solid";
+import { Avatar } from "@nextui-org/react";
 
 function HomeLogo() {
   return (
     <div className={styles.logo}>
       <motion.div>
         <Link href="/">
-          <HomeIcon className="w-6 h-6" />
+          <Avatar squared src="/selfie.jpg" size="md" />
         </Link>
       </motion.div>
       <Link href="/">
-        <h2 className="pl-3">Hyojoon Park</h2>
+        <h2 className="pl-3">Hyojoon Park - Dev</h2>
       </Link>
     </div>
   );
