@@ -4,34 +4,37 @@ import CustomCard from "../ui/card";
 function Main() {
   const aboutText = (
     <span>
-      I&apos;m a student developer at the University of Sydney.
+      I&apos;m a student developer at the University of Sydney, now living in
+      Seoul, South Korea because of the COVID-19 outbreaks
       <br />
-      However, I&apos;m now living in Seoul, South Korea due to the mandatory
-      military service.
+      <br />
+      Due to my current status, replacing my military service as a social
+      service personnel, I have a lot of spare time to discover and dive into
+      new cool stuffs (Frontend & Backend stacks) !
     </span>
   );
 
   const skillText = (
     <span>
       Have learnt and written programs and/or algorithms using C and 2
-      Object-Oriented Languages(OOP): Java and Python throughout course at the
-      university.
+      Object-Oriented Languages(OOP): Java and Python throughout courses at the
+      university
     </span>
   );
 
   const webDevText = (
     <span>
-      Have learnt and written programs and/or algorithms using C and 2
-      Object-Oriented Languages(OOP): Java and Python throughout course at the
-      university.
+      Trying to write and build web applications using React and Next JS (A
+      framework for React). This blog is the first React application that I
+      build on my own, styling using Tailwind css for easy & fast modern design
     </span>
   );
 
   const myInterestText = (
     <span>
-      Have learnt and written programs and/or algorithms using C and 2
-      Object-Oriented Languages(OOP): Java and Python throughout course at the
-      university.
+      You will be fascinated by animations implemented by "Framer Motion"
+      libaray. This library makes React components look user-friendly and move
+      dynamically !
     </span>
   );
 
