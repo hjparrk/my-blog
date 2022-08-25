@@ -7,12 +7,8 @@ const routes = [
     title: "Home",
   },
   {
-    href: "/about",
-    title: "About",
-  },
-  {
-    href: "/biography",
-    title: "Biography",
+    href: "/blog",
+    title: "Blog",
   },
   {
     href: "/contact",
