@@ -18,7 +18,7 @@ function HomeLogo() {
 }
 
 const styles = {
-  logo: "text-2xl flex items-center justify-start",
+  logo: "text-2xl flex items-center justify-start ml-20",
 };
 
 export default HomeLogo;

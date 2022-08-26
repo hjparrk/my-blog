@@ -12,6 +12,6 @@ function NavContent(props) {
   );
 }
 
-const styles = { linkContainer: "flex flex-row" };
+const styles = { linkContainer: "flex flex-row  mr-20" };
 
 export default NavContent;
