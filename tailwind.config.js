@@ -7,6 +7,9 @@ module.exports = {
   ],
   darkMode: "class", // or 'media' or 'class'
   theme: {
+    env: {
+      customKey: "my-value",
+    },
     extend: {},
     colors: {
       black: "#121212",
