@@ -28,6 +28,7 @@ function CardList() {
     <>
       {DUMMY_TEXT.map((card) => (
         <AnimatedCard
+          key={card.title}
           title={card.title}
           subtitle={card.subtitle}
           text={card.text}

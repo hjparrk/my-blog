@@ -6,7 +6,7 @@ function Welcoming(props) {
       <h1 className="mt-40 mb-12 font-bold">
         Wanna &nbsp;explore &nbsp;my &nbsp;blog?
       </h1>
-      <div className="flex flex-row">
+      <div className="flex flex-row mb-30 pb-40">
         <h2 className="font-light">highfive&nbsp; me&emsp;</h2>
         <motion.h2
           className="font-light"

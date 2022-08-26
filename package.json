@@ -11,13 +11,18 @@
   "dependencies": {
     "@heroicons/react": "^1.0.6",
     "@nextui-org/react": "^1.0.0-beta.9",
+    "axios": "^0.27.2",
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
     "framer-motion": "^7.2.0",
+    "mongodb": "^4.9.0",
     "next": "12.2.5",
     "next-themes": "^0.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
     "react-syntax-highlighter": "^15.5.0",
+    "sha256": "^0.2.0",
     "zustand": "^4.1.1"
   },
   "devDependencies": {
